@@ -1,0 +1,16 @@
+#Subir o jenkins e o kubernetes com Terraform
+terraform init
+terraform apply
+#Acessar os pods no kubernetes do ambiente DigitalOcean
+cp ./kube_config.yaml /home/lucas/.kube/config
+kubectl get nodes
+
+
+## Buscar o password do grafana para acesso
+kubectl get secret grafana -o jsonpath="{.data.admin-password}" | base64 --decode; echo
+
+login: admin
+password: comando acima
+
+## Excluir todo o ambiente criado pelo Terraform
+terraform destroy

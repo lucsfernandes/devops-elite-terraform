@@ -1,4 +1,4 @@
 
-do_token     = "dop_v1_f2c4a1725f6d36194191d4a10147f526fb3d238e67b11c0dc97ca5d9192d89d0"
+do_token     = "dop_v1_a1569c47867b51c1933d6c84704f368d2ff0078b97ba1c1e320971df42607654"
 ssh_key_name = "jornada"
 region       = "nyc1"
